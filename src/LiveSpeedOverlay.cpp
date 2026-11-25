@@ -662,7 +662,7 @@ static void draw_overlay(IDXGISwapChain *sc)
     ID3D11DomainShader *oldDs = nullptr;
     ctx->VSGetShader(&oldVs, nullptr, nullptr);
     ctx->PSGetShader(&oldPs, nullptr, nullptr);
-    ctx->GSGetShader(&oldGs);
+    ctx->GSGetShader(&oldGs, nullptr, nullptr);
     ctx->HSGetShader(&oldHs, nullptr, nullptr);
     ctx->DSGetShader(&oldDs, nullptr, nullptr);
     ID3D11InputLayout *oldIl = nullptr;
